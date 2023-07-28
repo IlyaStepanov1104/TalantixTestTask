@@ -8,11 +8,11 @@
     <title>Книга контактов</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <?php
-        require_once 'DB.php';
+        require_once 'backend/DB.php';
     ?>
     <div class="container">
         <div class="title">Добавить контакт</div>
@@ -27,7 +27,7 @@
         $("#add").on("submit", function(event){
             event.preventDefault();
             $.ajax({
-                url: '/add.php',
+                url: '/backend/add.php',
                 method: 'POST',
                 dataType: 'json',
                 data: $(this).serialize(),
@@ -57,7 +57,7 @@
                 foreach ($res as $contact){
                     echo '<div class="contact">
                     <div class="name">' . $contact['name'] . '
-                    <img src="img/cross.svg" onclick="$.get(\'/delete.php\', 
+                    <img src="img/cross.svg" onclick="$.get(\'/backend/delete.php\', 
                         {delete: \'' . $contact['id'] . '\'},
                         function (data){
                             if (data.type == \'yes\'){
