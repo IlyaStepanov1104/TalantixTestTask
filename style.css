@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #ECEFF4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.container:first-child{
+    margin-top: 100px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 320px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+.title, .contact{
+    padding: 25px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.add{
+    padding-top: 10px;
+}
+
+.text_input{
+    margin: 10px 25px;
+    width: 240px;
+    padding: 10px 15px;
+    border: 1px solid #EEEEEE;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.text_input::placeholder{
+    color: #AAAAAA;
+}
+
+.add .submit{
+    height: 40px;
+    width: 100px;
+    background-color: #4D59A1;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 13px 0;
+    text-align: center;
+    border: 0;
+    margin: 5px 25px 25px 195px;
+}
+
+.contact:last-child{
+    border-bottom: 0;
+}
+.phone{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.name img{
+    width: 10px;
+}
